@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+html {
+    background-color: black;
+}
+body {
+    position: relative;
+    background-image: url('pacote-d013/imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    height: 100dvh;
+}
+
+section#phone {
+    /* Center the section in the viewport */
+    position: absolute;
+    background-image: url('pacote-d013/imagens/frame-iphone.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 311px;
+    height: 400px;
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
