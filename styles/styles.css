@@ -11,7 +11,7 @@ html {
 }
 body {
     position: relative;
-    background-image: url('pacote-d013/imagens/fundo-madeira.jpg');
+    background-image: url('../pacote-d013/imagens/fundo-madeira.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -23,13 +23,13 @@ body {
 section#phone {
     /* Center the section in the viewport */
     position: absolute;
-    background-image: url('pacote-d013/imagens/frame-iphone.png');
+    background-image: url('../pacote-d013/imagens/frame-iphone.png');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 311px;
-    height: 400px;
+    height: 450px;
     background-color: transparent;
     left: 50%;
     top: 50%;
@@ -38,8 +38,27 @@ section#phone {
 
 iframe#tela {
     position: relative;
-    width: 171px;
-    height: 301px;
-    top: 51px;
-    left: 71px;
+    width: 191px;
+    height: 337px;
+    top: 59px;
+    left:60px;
+    bottom: 1px;
 }
+
+section#social {
+    text-align: right;
+}
+
+section > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section a> img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
